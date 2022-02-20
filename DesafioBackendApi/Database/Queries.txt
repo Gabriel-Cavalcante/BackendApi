@@ -1,0 +1,32 @@
+QUERIES
+
+[GET]
+
+select * from Clientes
+
+[GET by ID]
+
+select * from Clientes where Id = '?'
+
+[PUT by ID] 
+
+select * from dbo.Clientes
+where Cpf = '?'
+and Id != '?'
+
+select * from dbo.Clientes
+where Email = '?'
+and Id != '?'
+
+[POST]
+
+select * from Clientes where cpf = '?'
+
+insert into Clientes (Nome, Email, Senha, Cpf, DataNascimento)
+values ('?', '?', '?', '?', '?');
+
+[Delete]
+
+delete from Clientes where Id = '?'
+select * from Clientes where Id = '?'
+
